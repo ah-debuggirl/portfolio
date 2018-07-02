@@ -1,22 +1,23 @@
 
-  <h1>
-    {{ title }}
-  </h1>
   <header>
-    <a href="index.html" id="logo">
+    <a href="" id="logo">
         <h1>Marcela Aguilar Hernández</h1>
     </a>
     <nav>
         <ul>
-            <li><a href="index.html">Portafolio</a></li>
-            <li><a href="about.html">Gallery</a></li>
-            <li><a href="contact.html">Contacto</a></li>
+            <li><a routerLink='about'>About</a></li>
+            <li><a routerLink="gallery">Gallery</a></li>
+            <li><a routerLink="contact">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
+<router-outlet></router-outlet>
+
 <div id="wrapper">
-  
+  <app-gallery></app-gallery>
+  <app-about></app-about>
+  <app-contact></app-contact>
 
   <footer>
       <p> &copy; Derechos reservados</p>
